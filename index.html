@@ -783,6 +783,10 @@
         }
 
         /* ── Responsive ── */
+        .screens-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
+        .screens-grid img { width: 100%; height: auto; display: block; border-radius: 18px; border: 1px solid var(--glass-border); }
+        @media (max-width: 900px) { .screens-grid { grid-template-columns: repeat(2, 1fr); } }
+
         @media (max-width: 900px) {
             .features-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-grid { grid-template-columns: repeat(3, 1fr); }
@@ -928,6 +932,22 @@
                 <h3 data-i18n="feat6Title">MarineDex & Achievements</h3>
                 <p data-i18n="feat6Desc">Pokédex-style collection of 11 canonical debris families with pixel-art sprites. 24+ achievements across 6 categories keep field work engaging.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ════ Screens ════ -->
+<section class="screens" id="screens">
+    <div class="container">
+        <span class="section-label reveal" data-i18n="screensLabel">The app</span>
+        <h2 class="section-title reveal" data-i18n="screensTitle">A look inside</h2>
+        <div class="screens-grid reveal">
+            <img src="assets/screens/home.png" alt="Home screen" loading="lazy">
+            <img src="assets/screens/analysis-modes.png" alt="Analysis modes" loading="lazy">
+            <img src="assets/screens/report.png" alt="Generated report" loading="lazy">
+            <img src="assets/screens/continuous-scan.png" alt="Continuous scan" loading="lazy">
         </div>
     </div>
 </section>
@@ -1102,6 +1122,8 @@ const i18n = {
         subNoAccount: "No account required",
         subSize: "APK ~80 MB + model ~2.6 GB download",
         featuresLabel: "Capabilities",
+        screensLabel: "The app",
+        screensTitle: "A look inside",
         featuresTitle: "Features",
         featuresSubtitle: "Everything you need for marine debris monitoring, running entirely on your device.",
         feat1Title: "Image & Video Detection",
@@ -1164,6 +1186,8 @@ const i18n = {
         subNoAccount: "Sin cuenta necesaria",
         subSize: "APK ~80 MB + descarga del modelo ~2,6 GB",
         featuresLabel: "Capacidades",
+        screensLabel: "La app",
+        screensTitle: "Por dentro",
         featuresTitle: "Funcionalidades",
         featuresSubtitle: "Todo lo que necesitas para monitorizar residuos marinos, ejecut\u00e1ndose completamente en tu dispositivo.",
         feat1Title: "Detecci\u00f3n en Im\u00e1genes y V\u00eddeos",

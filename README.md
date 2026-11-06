@@ -8,7 +8,7 @@ the related publications and the APK download links.
 
 ```
 index.html   Single-file page (HTML, CSS and JavaScript; EN/ES language toggle)
-assets/      Logo and favicons
+assets/      Logo, favicons and screenshots of the application
 ```
 
 There is no build step and no dependency except the Google Fonts stylesheet loaded from the page head.
